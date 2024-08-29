@@ -1,12 +1,15 @@
 // script.js
 
-// Example of a simple animation on button click
-document.addEventListener("DOMContentLoaded", function() {
-    const button = document.createElement('button');
-    button.innerText = "Learn More";
-    document.body.appendChild(button);
+// Example: Change background color on scroll
+window.addEventListener('scroll', function() {
+    const body = document.body;
+    const scrollPosition = window.scrollY;
 
-    button.addEventListener("click", function() {
-        alert("You clicked the Learn More button!");
-    });
+    if (scrollPosition > 100) {
+        body.style.backgroundColor = '#e0f7fa';
+    } else {
+        body.style.backgroundColor = '#f4f4f4';
+    }
 });
+
+// Add other JS-based interactions or animations as needed
